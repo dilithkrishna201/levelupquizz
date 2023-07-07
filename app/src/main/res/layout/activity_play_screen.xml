@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroundfile"
+    android:background="@drawable/dd"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".PlayScreen">
@@ -12,9 +12,9 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_height="251dp"
         android:layout_marginTop="20dp"
-        android:src="@drawable/main_logo" />
+        android:src="@drawable/ee" />
 
     <Button
         android:id="@+id/bt_playQuiz"
@@ -27,7 +27,7 @@
         android:padding="10dp"
         android:text="Play Quiz"
         android:textAllCaps="false"
-        android:textColor="#fff"
+        android:textColor="#131111"
         android:textSize="30sp"
         android:textStyle="bold" />
 
@@ -42,7 +42,7 @@
         android:padding="10dp"
         android:text="Settings"
         android:textAllCaps="false"
-        android:textColor="#fff"
+        android:textColor="#131111"
         android:textSize="30sp"
         android:textStyle="bold" />
 
@@ -57,7 +57,7 @@
         android:padding="10dp"
         android:text="Information"
         android:textAllCaps="false"
-        android:textColor="#fff"
+        android:textColor="#131111"
         android:textSize="30sp"
         android:textStyle="bold" />
 </LinearLayout>

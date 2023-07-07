@@ -1,4 +1,4 @@
-package com.infowithvijay.triviaquizapp2;
+package com.infowithvijay.Quizapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Switch;
 
-import static com.infowithvijay.triviaquizapp2.AppController.StopSound;
+import static com.infowithvijay.Quizapp.AppController.StopSound;
 
 public class Settings extends AppCompatActivity {
 

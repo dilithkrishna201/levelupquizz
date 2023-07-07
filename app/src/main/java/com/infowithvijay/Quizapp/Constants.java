@@ -1,4 +1,4 @@
-package com.infowithvijay.triviaquizapp2;
+package com.infowithvijay.Quizapp;
 
 public class Constants {
 

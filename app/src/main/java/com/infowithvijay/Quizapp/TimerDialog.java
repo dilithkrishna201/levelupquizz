@@ -1,4 +1,4 @@
-package com.infowithvijay.triviaquizapp2;
+package com.infowithvijay.Quizapp;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -7,7 +7,6 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
 public class TimerDialog {
 

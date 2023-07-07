@@ -1,5 +1,6 @@
-package com.infowithvijay.triviaquizapp2;
+package com.infowithvijay.Quizapp;
 
+import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -8,9 +9,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-public class PythonLevelsActivity extends AppCompatActivity implements View.OnClickListener {
+public class JavaLevelsActivity extends AppCompatActivity implements View.OnClickListener {
 
     LinearLayout Level1,Level2,Level3;
     LinearLayout Level4,Level5,Level6;
@@ -30,7 +29,7 @@ public class PythonLevelsActivity extends AppCompatActivity implements View.OnCl
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_python_levels);
+        setContentView(R.layout.activity_java_levels);
 
 
         Level1 = findViewById(R.id.Level1);
@@ -68,7 +67,7 @@ public class PythonLevelsActivity extends AppCompatActivity implements View.OnCl
     public void onClick(View view) {
 
 
-        if (CategoryValue.equals("Python")){
+        if (CategoryValue.equals("Java")){
 
 
             switch (view.getId()){
@@ -76,8 +75,8 @@ public class PythonLevelsActivity extends AppCompatActivity implements View.OnCl
 
                 case R.id.Level1:
 
-                    Intent intentJavaLevel1 = new Intent(PythonLevelsActivity.this,QuizActivity.class);
-                    intentJavaLevel1.putExtra("Category",TriviaQuestion.CATEGORY_PYTHON);
+                    Intent intentJavaLevel1 = new Intent(JavaLevelsActivity.this,QuizActivity.class);
+                    intentJavaLevel1.putExtra("Category",TriviaQuestion.CATEGORY_JAVA);
                     intentJavaLevel1.putExtra("Level",1);
                     startActivity(intentJavaLevel1);
                     finish();
@@ -85,8 +84,8 @@ public class PythonLevelsActivity extends AppCompatActivity implements View.OnCl
 
                 case R.id.Level2:
 
-                    Intent intentJavaLevel2 = new Intent(PythonLevelsActivity.this,QuizActivity.class);
-                    intentJavaLevel2.putExtra("Category",TriviaQuestion.CATEGORY_PYTHON);
+                    Intent intentJavaLevel2 = new Intent(JavaLevelsActivity.this,QuizActivity.class);
+                    intentJavaLevel2.putExtra("Category",TriviaQuestion.CATEGORY_JAVA);
                     intentJavaLevel2.putExtra("Level",2);
                     startActivity(intentJavaLevel2);
                     finish();
@@ -94,8 +93,8 @@ public class PythonLevelsActivity extends AppCompatActivity implements View.OnCl
 
                 case R.id.Level3:
 
-                    Intent intentJavaLevel3 = new Intent(PythonLevelsActivity.this,QuizActivity.class);
-                    intentJavaLevel3.putExtra("Category",TriviaQuestion.CATEGORY_PYTHON);
+                    Intent intentJavaLevel3 = new Intent(JavaLevelsActivity.this,QuizActivity.class);
+                    intentJavaLevel3.putExtra("Category",TriviaQuestion.CATEGORY_JAVA);
                     intentJavaLevel3.putExtra("Level",3);
                     startActivity(intentJavaLevel3);
                     finish();
@@ -104,8 +103,8 @@ public class PythonLevelsActivity extends AppCompatActivity implements View.OnCl
 
                 case R.id.Level4:
 
-                    Intent intentJavaLevel4 = new Intent(PythonLevelsActivity.this,QuizActivity.class);
-                    intentJavaLevel4.putExtra("Category",TriviaQuestion.CATEGORY_PYTHON);
+                    Intent intentJavaLevel4 = new Intent(JavaLevelsActivity.this,QuizActivity.class);
+                    intentJavaLevel4.putExtra("Category",TriviaQuestion.CATEGORY_JAVA);
                     intentJavaLevel4.putExtra("Level",4);
                     startActivity(intentJavaLevel4);
                     finish();
@@ -114,8 +113,8 @@ public class PythonLevelsActivity extends AppCompatActivity implements View.OnCl
 
                 case R.id.Level5:
 
-                    Intent intentJavaLevel5 = new Intent(PythonLevelsActivity.this,QuizActivity.class);
-                    intentJavaLevel5.putExtra("Category",TriviaQuestion.CATEGORY_PYTHON);
+                    Intent intentJavaLevel5 = new Intent(JavaLevelsActivity.this,QuizActivity.class);
+                    intentJavaLevel5.putExtra("Category",TriviaQuestion.CATEGORY_JAVA);
                     intentJavaLevel5.putExtra("Level",5);
                     startActivity(intentJavaLevel5);
                     finish();
@@ -124,8 +123,8 @@ public class PythonLevelsActivity extends AppCompatActivity implements View.OnCl
 
                 case R.id.Level6:
 
-                    Intent intentJavaLevel6 = new Intent(PythonLevelsActivity.this,QuizActivity.class);
-                    intentJavaLevel6.putExtra("Category",TriviaQuestion.CATEGORY_PYTHON);
+                    Intent intentJavaLevel6 = new Intent(JavaLevelsActivity.this,QuizActivity.class);
+                    intentJavaLevel6.putExtra("Category",TriviaQuestion.CATEGORY_JAVA);
                     intentJavaLevel6.putExtra("Level",6);
                     startActivity(intentJavaLevel6);
                     finish();
@@ -145,12 +144,12 @@ public class PythonLevelsActivity extends AppCompatActivity implements View.OnCl
                 getSharedPreferences(getPackageName() + Constants.MY_LEVEL_PREFFILE,
                         Context.MODE_PRIVATE);
 
-         JL1 = sharedPreferences.getInt(Constants.KEY_PYTHON_LEVEL_1,0);
-         JL2 = sharedPreferences.getInt(Constants.KEY_PYTHON_LEVEL_2,0);
-         JL3 = sharedPreferences.getInt(Constants.KEY_PYTHON_LEVEL_3,0);
-         JL4 = sharedPreferences.getInt(Constants.KEY_PYTHON_LEVEL_4,0);
-         JL5 = sharedPreferences.getInt(Constants.KEY_PYTHON_LEVEL_5,0);
-         JL6 = sharedPreferences.getInt(Constants.KEY_PYTHON_LEVEL_6,0);
+         JL1 = sharedPreferences.getInt(Constants.KEY_JAVA_LEVEL_1,0);
+         JL2 = sharedPreferences.getInt(Constants.KEY_JAVA_LEVEL_2,0);
+         JL3 = sharedPreferences.getInt(Constants.KEY_JAVA_LEVEL_3,0);
+         JL4 = sharedPreferences.getInt(Constants.KEY_JAVA_LEVEL_4,0);
+         JL5 = sharedPreferences.getInt(Constants.KEY_JAVA_LEVEL_5,0);
+         JL6 = sharedPreferences.getInt(Constants.KEY_JAVA_LEVEL_6,0);
 
          // Level 1
         if (JL1 == 1){
@@ -237,7 +236,7 @@ public class PythonLevelsActivity extends AppCompatActivity implements View.OnCl
 
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(PythonLevelsActivity.this,CategoryActivity.class);
+        Intent intent = new Intent(JavaLevelsActivity.this,CategoryActivity.class);
         startActivity(intent);
         finish();
 

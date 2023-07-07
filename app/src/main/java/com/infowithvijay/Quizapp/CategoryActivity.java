@@ -1,4 +1,4 @@
-package com.infowithvijay.triviaquizapp2;
+package com.infowithvijay.Quizapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,21 +11,17 @@ import android.widget.Button;
 
 public class CategoryActivity extends AppCompatActivity implements View.OnClickListener{
 
-    Button btJava,btKotlin,btDart,btPython;
+    Button btJava,btKotlin,btPython;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category);
 
-        btDart = findViewById(R.id.bt_Dart);
         btJava = findViewById(R.id.bt_Java);
         btKotlin = findViewById(R.id.bt_Kotlin);
         btPython = findViewById(R.id.bt_Python);
 
-
-
-        btDart.setOnClickListener(this);
         btJava.setOnClickListener(this);
         btKotlin.setOnClickListener(this);
         btPython.setOnClickListener(this);
@@ -64,14 +60,6 @@ public class CategoryActivity extends AppCompatActivity implements View.OnClickL
                 finish();
                 break;
 
-
-            case R.id.bt_Dart:
-
-//                Intent intentDart = new Intent(CategoryActivity.this,JavaLevelsActivity.class);
-//                intentDart.putExtra("Category",TriviaQuestion.CATEGORY_PYTHON);
-//                startActivity(intentDart);
-//                finish();
-                break;
         }
 
     }

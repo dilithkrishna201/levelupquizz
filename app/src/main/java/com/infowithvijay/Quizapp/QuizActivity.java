@@ -1,4 +1,4 @@
-package com.infowithvijay.triviaquizapp2;
+package com.infowithvijay.Quizapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
@@ -15,7 +15,6 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
-import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -95,6 +94,7 @@ public class QuizActivity extends AppCompatActivity {
         Intent intentCategoryAndLevels = getIntent();
         categoryValue = intentCategoryAndLevels.getStringExtra("Category");
         levelsId = intentCategoryAndLevels.getIntExtra("Level",0);
+
 
         timerDialog = new TimerDialog(this);
 
@@ -647,6 +647,8 @@ public class QuizActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor1 = sharedPreferences.edit();
                 editor1.putString(Constants.KEY_CAT_JAVA_LEVEL_2,"Unlock");
                 editor1.apply();
+            }else{
+                Toast.makeText(this, "You need to get 3 correct to qualify!!!", Toast.LENGTH_SHORT).show();
             }
         }else if (levelsId == 2 && categoryValue.equals("Java")){
             // The active level is 2, So we need to unlock the Level 3
@@ -658,6 +660,8 @@ public class QuizActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor1 = sharedPreferences.edit();
                 editor1.putString(Constants.KEY_CAT_JAVA_LEVEL_3,"Unlock");
                 editor1.apply();
+            }else{
+                Toast.makeText(this, "You need to get 3 correct to qualify!!!", Toast.LENGTH_SHORT).show();
             }
         }else if (levelsId == 3 && categoryValue.equals("Java")){
             // The active level is 3, So we need to unlock the Level 4
@@ -669,6 +673,8 @@ public class QuizActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor1 = sharedPreferences.edit();
                 editor1.putString(Constants.KEY_CAT_JAVA_LEVEL_4,"Unlock");
                 editor1.apply();
+            }else{
+                Toast.makeText(this, "You need to get 3 correct to qualify!!!", Toast.LENGTH_SHORT).show();
             }
         }else if (levelsId == 4 && categoryValue.equals("Java")){
             // The active level is 4, So we need to unlock the Level 5
@@ -680,6 +686,8 @@ public class QuizActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor1 = sharedPreferences.edit();
                 editor1.putString(Constants.KEY_CAT_JAVA_LEVEL_5,"Unlock");
                 editor1.apply();
+            }else{
+                Toast.makeText(this, "You need to get 3 correct to qualify!!!", Toast.LENGTH_SHORT).show();
             }
         }else if (levelsId == 5 && categoryValue.equals("Java")){
             // The active level is 5, So we need to unlock the Level 6
@@ -691,6 +699,8 @@ public class QuizActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor1 = sharedPreferences.edit();
                 editor1.putString(Constants.KEY_CAT_JAVA_LEVEL_6,"Unlock");
                 editor1.apply();
+            }else{
+                Toast.makeText(this, "You need to get 3 correct to qualify!!!", Toast.LENGTH_SHORT).show();
             }
         }
     }
@@ -713,6 +723,8 @@ public class QuizActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor1 = sharedPreferences.edit();
                 editor1.putString(Constants.KEY_CAT_PYTHON_LEVEL_2,"Unlock");
                 editor1.apply();
+            }else{
+                Toast.makeText(this, "You need to get 3 correct to qualify!!!", Toast.LENGTH_SHORT).show();
             }
         }else if (levelsId == 2 && categoryValue.equals("Python")){
             // The active level is 2, So we need to unlock the Level 3
@@ -724,6 +736,8 @@ public class QuizActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor1 = sharedPreferences.edit();
                 editor1.putString(Constants.KEY_CAT_PYTHON_LEVEL_3,"Unlock");
                 editor1.apply();
+            }else{
+                Toast.makeText(this, "You need to get 3 correct to qualify!!!", Toast.LENGTH_SHORT).show();
             }
         }else if (levelsId == 3 && categoryValue.equals("Python")){
             // The active level is 3, So we need to unlock the Level 4
@@ -735,6 +749,8 @@ public class QuizActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor1 = sharedPreferences.edit();
                 editor1.putString(Constants.KEY_CAT_PYTHON_LEVEL_4,"Unlock");
                 editor1.apply();
+            }else{
+                Toast.makeText(this, "You need to get 3 correct to qualify!!!", Toast.LENGTH_SHORT).show();
             }
         }else if (levelsId == 4 && categoryValue.equals("Python")){
             // The active level is 4, So we need to unlock the Level 5
@@ -746,6 +762,8 @@ public class QuizActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor1 = sharedPreferences.edit();
                 editor1.putString(Constants.KEY_CAT_PYTHON_LEVEL_5,"Unlock");
                 editor1.apply();
+            }else{
+                Toast.makeText(this, "You need to get 3 correct to qualify!!!", Toast.LENGTH_SHORT).show();
             }
         }else if (levelsId == 5 && categoryValue.equals("Python")){
             // The active level is 5, So we need to unlock the Level 6
@@ -757,6 +775,8 @@ public class QuizActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor1 = sharedPreferences.edit();
                 editor1.putString(Constants.KEY_CAT_PYTHON_LEVEL_6,"Unlock");
                 editor1.apply();
+            }else{
+                Toast.makeText(this, "You need to get 3 correct to qualify!!!", Toast.LENGTH_SHORT).show();
             }
         }
 
@@ -780,6 +800,8 @@ public class QuizActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor1 = sharedPreferences.edit();
                 editor1.putString(Constants.KEY_CAT_KOTLIN_LEVEL_2,"Unlock");
                 editor1.apply();
+            }else{
+                Toast.makeText(this, "You need to get 3 correct to qualify!!!", Toast.LENGTH_SHORT).show();
             }
         }else if (levelsId == 2 && categoryValue.equals("Kotlin")){
             // The active level is 2, So we need to unlock the Level 3
@@ -791,6 +813,8 @@ public class QuizActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor1 = sharedPreferences.edit();
                 editor1.putString(Constants.KEY_CAT_KOTLIN_LEVEL_3,"Unlock");
                 editor1.apply();
+            }else{
+                Toast.makeText(this, "You need to get 3 correct to qualify!!!", Toast.LENGTH_SHORT).show();
             }
         }else if (levelsId == 3 && categoryValue.equals("Kotlin")){
             // The active level is 3, So we need to unlock the Level 4
@@ -802,6 +826,8 @@ public class QuizActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor1 = sharedPreferences.edit();
                 editor1.putString(Constants.KEY_CAT_KOTLIN_LEVEL_4,"Unlock");
                 editor1.apply();
+            }else{
+                Toast.makeText(this, "You need to get 3 correct to qualify!!!", Toast.LENGTH_SHORT).show();
             }
         }else if (levelsId == 4 && categoryValue.equals("Kotlin")){
             // The active level is 4, So we need to unlock the Level 5
@@ -813,6 +839,8 @@ public class QuizActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor1 = sharedPreferences.edit();
                 editor1.putString(Constants.KEY_CAT_KOTLIN_LEVEL_5,"Unlock");
                 editor1.apply();
+            }else{
+                Toast.makeText(this, "You need to get 3 correct to qualify!!!", Toast.LENGTH_SHORT).show();
             }
         }else if (levelsId == 5 && categoryValue.equals("Kotlin")){
             // The active level is 5, So we need to unlock the Level 6
@@ -824,6 +852,8 @@ public class QuizActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor1 = sharedPreferences.edit();
                 editor1.putString(Constants.KEY_CAT_KOTLIN_LEVEL_6,"Unlock");
                 editor1.apply();
+            }else{
+                Toast.makeText(this, "You need to get 3 correct to qualify!!!", Toast.LENGTH_SHORT).show();
             }
         }
 
